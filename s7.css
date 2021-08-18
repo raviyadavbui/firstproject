@@ -1,0 +1,9 @@
+li:nth-child(3n+1){
+    color:rgb(9, 255, 0);
+}
+
+input:focus{
+    border:5px solid red;
+
+    
+}

@@ -1,0 +1,30 @@
+#fun{
+background-color: cadetblue;
+height: 200px;
+width: calc(100%-200px);
+
+
+}
+a{
+padding: 10px 30px;
+margin: 20px;
+background-color: lightpink;
+color:red;
+text-decoration: none;
+
+
+}
+#div1{
+background-color: teal;
+width: 600px;
+height: 150px;
+
+}
+#div2{
+background-color: red;
+width: 600px;
+height: 150px;
+//padding: 50px;
+//border:10px solid black;
+//box-sizing: border-box;
+}

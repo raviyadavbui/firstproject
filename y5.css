@@ -1,0 +1,53 @@
+#cover{
+border: 2px solid red;
+height: 200px;
+width: 200px;
+margin: 150px;
+
+
+
+
+}
+
+#contant{
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+   /* transform: perspective(300px) rotate3d(0,0,50,30deg);*/
+  /* transform: perspective(300px) translate3d(50px,0px,0px);*/
+   transform: perspective(300px) translate3d(0px,0px,-70px);
+}
+#anshika{
+height: 100px;
+width: 100px;
+background-color: red;
+margin: 100px;
+/*transition-property: width,background-color;*/
+transition-duration: 1s;
+transition-property: all;
+transition-timing-function: ease-in-out;
+
+
+
+
+}
+#anshika:hover{
+    width: 200px;
+    background-color: green;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

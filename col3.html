@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+input{
+    border: 1x solid black;
+    padding: 5px;
+    margin:5px;
+    background-color: rgb(141, 132, 121);
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+}
+#div1{
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: dodgerblue;
+    color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div id="div1">
+    <label> Enter a first Number</label>
+<input type="text" id= "n1"><br><br>
+<label>Enter a second number</label>
+<input type="text" id="n2"><br><br>
+<input type="button" value="add" onclick="add()">
+<input type="button" value="sub" onclick="sub()">
+<input type="button" value="mul" onclick="mul()">
+<input type="button" value="div" onclick="div()">
+<input type="button"  value="reset" onclick="reset">
+</div>
+
+<div id="res"></div>
+<div id="ses"></div>
+<div id="tes"></div>
+<div id="mes"></div>
+<script>
+function add(){
+var n1 = parseInt(document.getElementById("n1").value);
+var n2 = parseInt(document.getElementById("n2").value);
+var sum =n1+n2;
+document.getElementById("res").innerHTML=sum;
+}
+function sub(){
+var n1 = parseInt(document.getElementById("n1").value);
+var n2 = parseInt(document.getElementById("n2").value);
+var sub= n1-n2;
+document.getElementById("ses").innerHTML=sub;
+}
+ 
+function mul(){
+var n1 = parseInt(document.getElementById("n1").value);
+var n2 = parseInt(document.getElementById("n2").value);
+var mul= n1*n2;
+document.getElementById("tes").innerHTML=mul;
+}
+function div(){
+var n1 = parseInt(document.getElementById("n1").value);
+var n2 = parseInt(document.getElementById("n2").value);
+var div= n1/n2;
+document.getElementById("mes").innerHTML=div;
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

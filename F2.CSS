@@ -1,0 +1,39 @@
+td{
+    
+   /* border:5px solid green;*/
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px red;
+
+
+
+}
+#table{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    
+    background-color:rgba(78, 85, 55, 0.795);
+    
+    text-align:center;
+    margin-left: 25%;
+    color:;
+    text-shadow: 1px 1px 1px green;
+
+
+
+
+}
+#l{
+    color: RED;
+    text-align:center;
+    background-color:rgb(49, 0, 128);
+    border:1px solid white;
+    
+    
+
+
+}
+
+

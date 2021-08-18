@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="first" id="first" placeholder="First number?">
+
+
+
+            </td>
+
+
+
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" name="second" id="second" placeholder="second number?">
+
+
+
+            </td>
+
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="method" value="add" id="AddMethod"><label for="AddMethod">Addition</label>
+                <input type="radio" name="method" value="sub" id="SubMethod"><label for="SubMethod">Subtraction</label>
+                <input type="radio" name="method" value="mul" id="MulMethod"><label for="MulMethod">Multiplication</label>
+                <input type="radio" name="method" value="div" id="DivMethod"><label for="DivMethod">Division</label>
+                <input type="radio" name="method" value="mod" id="ModMethod"><label for="ModMethod">Modulas</label>
+
+
+
+
+
+
+            </td>
+
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="getresult" onclick="getResult()" id="getResult">
+            </td>
+
+
+        </tr>
+
+
+
+
+    </table>
+
+    <script>
+        function getResult()
+        {
+            var firstvalue=document.getElementById("first").value;
+            var secondvalue=document.getElementById("second").value;
+            if(document.getElementById("AddMethod").checked==true)
+            {
+                var result=Number(firstvalue)+Number(secondvalue);
+
+            }
+            else if(document.getElementById("SubMethod").checked==true)
+            {
+                var result=Number(firstvalue)-Number(secondvalue);
+
+            }
+            else if(document.getElementById("MulMethod").checked==true)
+            {
+                var result=Number(firstvalue)*Number(secondvalue);
+            }
+            else if(document.getElementById("DivMethod").checked==true)
+            {
+                var result=Number(firstvalue)/Number(secondvalue);
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+#contant{
+width: 70%;
+height: 200px;
+background-color: chartreuse;
+float: left;
+}
+#ravi{
+width: 30%;
+height: 150px;
+background-color: coral;
+float: left;
+}
+#footer{
+background-color: darkgoldenrod;
+clear: both;
+}

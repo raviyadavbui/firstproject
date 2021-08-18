@@ -1,0 +1,23 @@
+selecter::pseudo-element{
+
+
+
+}
+p::first-line{
+
+    font-size: 35px;
+    color:red;
+}
+h1::before{
+content: url(images/arrow.png);
+
+}
+h1::after{
+content: " added after";
+
+}
+::selection{
+color:green;
+background: yellowgreen;
+
+}

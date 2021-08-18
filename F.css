@@ -1,0 +1,17 @@
+#div1{
+
+border:1px solid white;
+text-align: center;
+background-color :blueviolet;
+width: 300px;
+height: 200px;
+margin-left: 25%;
+margin-top: 50px;
+/*border-radius: 5px;*/
+box-shadow: 2px 2px 2px red;
+padding: 5px;
+text-align: center;
+}
+#login{
+text-align:center;
+}

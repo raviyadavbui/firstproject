@@ -1,0 +1,29 @@
+textarea{
+    
+}
+table,tr,td,th{
+border: 1px solid;
+text-align: center;
+
+}
+table.mtable input[type=text],input[type=number],input[type=date],input[type=text],input[type=email]
+{
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+}
+input:hover,textarea:hover,select:hover{
+    background-color: #fff;
+    border:1px thin;
+    border-color:black;
+    box-shadow:  3px 3px 3px;
+
+
+}
+input:focus{
+    background-color: #fff;
+    color: #000;
+    border-color: black;
+
+}
+

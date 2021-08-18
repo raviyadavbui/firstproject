@@ -1,0 +1,55 @@
+body{
+    background-color:rgb(30, 73, 90);
+    
+    
+}
+tr,table{
+
+font-size: 10px;
+text-align:left;
+
+
+}
+input{
+    width: 50%px; 
+    margin-right: 15px;
+    padding-bottom: 10px;
+}
+#D{
+    background-color:red;
+    color: wheat;
+}
+#E{
+    background-color:slategray;
+    color: wheat;
+
+
+}
+#F{
+    background-color:slategray;
+    color: wheat;
+
+
+
+}
+td{
+
+
+}
+select{
+    padding-left: 5px;
+    margin: 5px;
+}
+#M{
+   font-size: 10PX;
+   padding-left: 5PX;
+   text-align: left;
+    
+    
+
+
+
+}
+
+
+

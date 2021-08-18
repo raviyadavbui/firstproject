@@ -1,0 +1,12 @@
+.display{
+border:1px solid green;
+width: 50%;
+height: 100px;
+display:inline-block;
+
+}
+#div1{
+
+    display: none;
+    /*visibility: hidden;*/
+}

@@ -1,0 +1,9 @@
+#text{
+color:rgb(47, 113, 255);
+//background-color: khaki;
+}
+input{
+    color:green;
+    border:2px solid red;
+    background-color: rgb(105, 255, 248);
+}
