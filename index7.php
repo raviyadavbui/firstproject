@@ -17,6 +17,7 @@ Gread:<input type="radio name="gread" value="Gread">
 <input type="submit">
 <input type="reset">
 </form>
-  </div>  
+  </div> 
+   <p>ravi</p>
 </body>
 </html>
