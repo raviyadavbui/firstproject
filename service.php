@@ -1,5 +1,5 @@
 <?php 
-include"Header.php";
+include "Header.php";
 
 ?>
 <?php
@@ -229,7 +229,81 @@ if (mysqli_query($conn, $sql_query)) {
 mysqli_close($conn);
 
 }
+?> 
+<?php
+/*$link=mysqli_connect("localhost","root","");
+mysqli_select_db($link,"db_test");*/
 ?>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#l_country").on('change',function(){
+		var country_id=this.value;
+		//console.log(country_id);
+		$.ajax({
+			method:"POST",
+			url:"ajax.php",
+			data:{country_id:country_id},
+			dataType:"html",
+			success:function(data){
+				$("#l_state").html(data);
+				//console.log(data);
+			}
+
+		});
+
+	});
+	// state city
+
+	$("#l_state").on('change',function(){
+		var state_id=this.value;
+		//console.log(country_id);
+		$.ajax({
+			method:"POST",
+			url:"ajax.php",
+			data:{state_id:state_id},
+			dataType:"html",
+			success:function(data){
+				$("#l_city").html(data);
+				//console.log(data);
+			}
+
+		});
+
+	});
+
+
+
+
+
+
+
+
+/*$('#l_country').on('change', function() {
+	var country_id=this.value;
+	//console.log(country_id);
+	$.post( "ajax.php",{country_code:country_code,method:"get_states"}, function( data ) {
+	  	$("#l_state").html(data);
+
+	});
+});*/
+
+/*$('#l_state').on('change', function() {
+	var state_code=this.value;
+	$.post( "ajax.php",{state_code:state_code,method:"get_cities"}, function( data ) {
+	  	$("#l_districts").html(data);
+
+	});
+});*/
+
+
+
+
+
+});
+
+
+</script>
+
 
 <div class=" bg-primary text-white text-center pt-2 mb-2 fs-bold sticky-top "><H1>A.S.M.CONVENT SCHOOL</H1></div>
 	<section>
@@ -278,13 +352,55 @@ mysqli_close($conn);
 		<div class="form-group">
 		    <label for="l_country">Country</label>
 			    <select class="form-control" name="l_country" id="l_country" style="appearance:auto;">
-			    	<option value="IN">India</option>
-			    	<option value="PK">Pakistan</option>
-			    	<option value="CA">Caneda</option>
-			    	<option value="AU">Australia</option>
-			    	<option value="US">United States of America</option>
+					<option value="">select country</option>
+			    	
+					<?php
+					
+					/*$res=mysqli_query($link,"select * from countries");
+            while($row=mysqli_fetch_array($res)){
+                ?>
+                <option><?php echo $row["name"]?></option>
+                <?php
+
+
+            }*/
+			$link=mysqli_connect('localhost','root','','db_test');
+
+			$res=mysqli_query($link,"select * from countries");
+            while($row=mysqli_fetch_array($res)){
+                ?>
+				
+                <option value="<?php echo $row['id'];?>"><?php echo $row['name'];?></option>
+				
+                <?php
+
+
+			}
+					?>
+
 			    </select>
 		  </div>
+		  <div class="form-group">
+		  <label for="l_state">state</label>
+			    <select class="form-control" name="l_state" id="l_state" style="appearance:auto;">
+					<option value="">select state</option>
+					<?php 
+			    
+			    ?>
+			    	
+			    </select>
+		  </div>
+		  <div class="form-group">
+		  <label for="l_city">City</label>
+			    <select class="form-control" name="l_city" id="l_city" style="appearance:auto;">
+					<option value="">select city</option>
+					<?php 
+			    
+			    ?>			   
+			    	
+			    </select>
+		  </div>
+		  
 
 
 
